@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="utf-8">
+	<title>Flyt</title>
+	<link rel="stylesheet" href="flyt2.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<article class="header1">
+            <img id="set" src="seta.png" width="220px" height="220px">
+        </article>
+	</header>
+	<main>
+	    <article class="nav">
+	    	<a href="#log1">Log in</a>
+	    	<a href="aboutus.html">About us</a>
+            <a href="Join.html">Join us</a>
+	    	<a href="#kontakt">Contact</a>   
+	    </article>
+	</main>
+    <article id="log1">
+        <input id="username" type="text" placeholder="username">
+        <input id="password" type="password" placeholder="*****">
+        <button id="button" >Log in</button>
+        <div id="googlemaps"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d815236.4489389966!2d9.886521982263705!3d59.190168825724776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46450fef070d6a13%3A0xaa54730e58fc8901!2sSwanfalk%20Shipping%20AB%2C%20Bastiongatan%2C%20Uddevalla%2C%20Sweden!3m2!1d58.351535999999996!2d11.914998599999999!4m5!1s0x46416e7bfda9fef5%3A0x1999a7ebc1b332a3!2sOsloMet%20-%20Biblioteket%20P35%2C%20Ellen%20Gleditschs%20hus%2C%20Pilestredet%2035%2C%200166%20Oslo!3m2!1d59.9193887!2d10.7347465!5e0!3m2!1sen!2sno!4v1629374616169!5m2!1sen!2sno" width="90%" height="1300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </article>
+        
+        <footer id="kontakt">
+            <article class="info">contact:<br>
+                <p>Mobil:1999999<br>Facebook & insta: flyt<br>mail: flyt.norway@gmail.com</p>
+            </article>
+            <article class="partner"> we have reached out to:<br>
+                <ul>
+                    <li>NAF</li>
+                    <li>ASKO</li>
+                    <li>NHO</li>
+                    <li>Trygg Trfaikk</li>
+                </ul>
+            </article>
+        </footer>
+    <script> 
+        document.getElementById('button').onclick = function() {
+            document.getElementById('username').style.display = 'none';
+            document.getElementById('password').style.display = 'none';
+            document.getElementById('button').style.display = 'none';
+            document.getElementById('googlemaps').style.display = 'block';
+        }</script>
+</body>
+</html>
